@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers\Auth;
 
+use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
@@ -26,7 +28,15 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = RouteServiceProvider::HOME;
+    // protected $redirectTo = RouteServiceProvider::HOME;
+    protected function authenticated()
+    {
+        if (Auth::user()->role == '2') {
+            return redirect(route('admin.dashboard'))->with('message', 'Welcome to JBMM Internation Dashboard');
+        } else {
+            return redirect(route('/'))->with('status', 'Logged in Successfully');
+        }
+    }
 
     /**
      * Create a new controller instance.
