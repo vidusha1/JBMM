@@ -1,1 +1,5 @@
-<h5>Admin Dashboard</h5>
+@section('title', 'Admin Dashboard')
+@extends('layouts.admin.app')
+
+@section('content')
+@endsection
