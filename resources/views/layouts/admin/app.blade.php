@@ -13,6 +13,9 @@
     <link href="{{ asset('admin/img/favicon.png') }}" rel="icon">
     <link href="{{ asset('admin/img/favicon.png') }}" rel="apple-touch-icon">
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i" rel="stylesheet">
+    
     @include('libraries.admin.styles')
     @livewireStyles
 </head>
@@ -21,6 +24,9 @@
     <div class="wrapper">
         @include('components.admin.navbar')
         @include('components.admin.aside')
+        <div class="content-wrapper">
+            @yield('content')
+        </div>
     </div>
 
     @include('libraries.admin.scripts')
