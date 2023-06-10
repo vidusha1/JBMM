@@ -29,7 +29,7 @@ use App\Http\Controllers\Admin\AdminDashboardController;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');
 
 Auth::routes();
 
@@ -38,17 +38,88 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::prefix('admin/')->middleware('auth', 'isAdmin')->group(function () {
     Route::get('/dashboard', [AdminDashboardController::class, 'index'])->name('admin.dashboard');
 
+    // Category Route
+    Route::prefix('categories/')->group(function () {
+        Route::controller(CategoryController::class)->group(function () {
+            Route::get('/', 'index')->name('categories.index');
+            Route::get('/create', 'create')->name('category.create');
+            Route::post('/create', 'store')->name('category.store');
+            Route::get('/{category}/edit', 'edit')->name('category.edit');
+            Route::put('/{category}/', 'update')->name('category.update');
+            Route::get('/{category}/delete', 'destroy')->name('category.destroy');
+        });
+    });
 
-    Route::get('/categories', [CategoryController::class, 'index'])->name('categories.index');
-    Route::get('/brands', [BrandsController::class, 'index'])->name('brands.index');
-    Route::get('/colors', [ColorsController::class, 'index'])->name('colors.index');
-    Route::get('/products', [ProductsController::class, 'index'])->name('products.index');
-    Route::get('/orders', [OrdersController::class, 'index'])->name('orders.index');
-    Route::get('/reports', [ReportsController::class, 'index'])->name('reports.index');
-    Route::get('/customers', [CustomersController::class, 'index'])->name('customers.index');
-    Route::get('/invoices', [InvoiceController::class, 'index'])->name('invoices.index');
-    Route::get('/inventory', [WarehouseController::class, 'index'])->name('inventory.index');
-    Route::get('/sliders', [SliderController::class, 'index'])->name('sliders.index');
-    Route::get('/promotions', [PromotionController::class, 'index'])->name('promotions.index');
-    Route::get('/users', [UsersController::class, 'index'])->name('users.index');
+    // Brand Route
+    Route::get('/brands', App\Http\Livewire\Admin\Brand\Index::class)->name('brands.index');
+
+    // Colors
+    Route::prefix('/colors')->group(function () {
+        Route::controller(ColorsController::class)->group(function () {
+            Route::get('/colors', 'index')->name('colors.index');
+        });
+    });
+
+    // Products
+    Route::prefix('/products')->group(function () {
+        Route::controller(ProductsController::class)->group(function () {
+            Route::get('/products', 'index')->name('products.index');
+        });
+    });
+
+    // Orders
+    Route::prefix('/orders')->group(function () {
+        Route::controller(OrdersController::class)->group(function () {
+            Route::get('/orders', 'index')->name('orders.index');
+        });
+    });
+
+    // Reports
+    Route::prefix('/reports')->group(function () {
+        Route::controller(ReportsController::class)->group(function () {
+            Route::get('/reports', 'index')->name('reports.index');
+        });
+    });
+
+    // Customers
+    Route::prefix('/customers')->group(function () {
+        Route::controller(CustomersController::class)->group(function () {
+            Route::get('/customers', 'index')->name('customers.index');
+        });
+    });
+
+    // Invoices
+    Route::prefix('/invoices')->group(function () {
+        Route::controller(InvoiceController::class)->group(function () {
+            Route::get('/invoices', 'index')->name('invoices.index');
+        });
+    });
+
+    // Inventory
+    Route::prefix('/inventory')->group(function () {
+        Route::controller(WarehouseController::class)->group(function () {
+            Route::get('/inventory', 'index')->name('inventory.index');
+        });
+    });
+
+    // Sliders
+    Route::prefix('/sliders')->group(function () {
+        Route::controller(SliderController::class)->group(function () {
+            Route::get('/sliders', 'index')->name('sliders.index');
+        });
+    });
+
+    // Promotions
+    Route::prefix('/promotions')->group(function () {
+        Route::controller(PromotionController::class)->group(function () {
+            Route::get('/promotions', 'index')->name('promotions.index');
+        });
+    });
+
+    // Promotions
+    Route::prefix('/users')->group(function () {
+        Route::controller(UsersController::class)->group(function () {
+            Route::get('/users', 'index')->name('users.index');
+        });
+    });
 });

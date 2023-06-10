@@ -41,7 +41,7 @@
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>All Categories</p>
                             </a>
-                            <a href="#" class="nav-link">
+                            <a href="{{ route('category.create') }}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Create Category</p>
                             </a>
@@ -205,7 +205,7 @@
                 <li class="nav-header">Other Elements</li>
 
                 <li class="nav-item">
-                    <a href="{{ route('home') }}" class="nav-link">
+                    <a href="{{ route('welcome') }}" class="nav-link">
                         <i class="nav-icon fa-solid fa-house"></i>
                         <p>Home</p>
                     </a>
