@@ -22,31 +22,33 @@
                                 </tr>
                             </thead>
                             <tbody>
-                               @forelse ($categories as $categoryItem)
-                                   <tr>
-                                        <td>#</td>
-                                        <td>{{ $categoryItem['title'] }}</td>
-                                        <td>{{ $categoryItem['slug'] }}</td>
-                                        <td>{{ $categoryItem['description'] }}</td>
-                                        <td>
-                                            @if ($categoryItem['status'] == 0)
-                                                <span class="badge badge-success">Active</span>
-                                            @else
-                                                <span class="badge badge-danger">Inactive</span>
-                                            @endif
-                                        </td>
-                                        <td>
-                                            <a href="{{ url('admin/categories/' . $categoryItem->id . '/edit') }}">
-                                                <i class="fas fa-eye text-info mx-1"></i>
-                                            </a>
-                                            <a href="{{ url('admin/categories/' . $categoryItem->id . '/delete') }}">
-                                                <i class="fas fa-trash text-danger mx-1"></i>
-                                            </a>
-                                        </td>
-                                   </tr>
-                               @empty
-                                   <span class="text-danger">No Category Found!</span>
-                               @endforelse
+                                @forelse ($categories as $categoryItem)
+                                <tr>
+                                    <td>#</td>
+                                    <td>{{ $categoryItem['title'] }}</td>
+                                    <td>{{ $categoryItem['slug'] }}</td>
+                                    <td>{{ $categoryItem['description'] }}</td>
+                                    <td>
+                                        @if ($categoryItem['status'] == 0)
+                                        <span class="badge badge-success">Active</span>
+                                        @else
+                                        <span class="badge badge-danger">Inactive</span>
+                                        @endif
+                                    </td>
+                                    <td>
+                                        <a href="{{ url('admin/categories/' . $categoryItem->id . '/edit') }}">
+                                            <i class="fas fa-eye text-info mx-1"></i>
+                                        </a>
+                                        <a href="{{ url('admin/categories/' . $categoryItem->id . '/delete') }}" onclick="return confirm('Are you sure you want to delete this category?')">
+                                            <i class="fas fa-trash text-danger mx-1"></i>
+                                        </a>
+                                    </td>
+                                </tr>                               
+
+                                @empty
+                                <span class="text-danger">No Category Found!</span>   
+
+                                @endforelse
                             </tbody>
                         </table>
                         <div class="d-flex float-end">

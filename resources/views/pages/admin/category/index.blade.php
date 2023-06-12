@@ -7,6 +7,13 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
+                    @if ($errors->any())
+                    <div class="alert alert-warning">
+                        @foreach ($errors->all() as $error)
+                        <div class="">{{ $error }}</div>
+                        @endforeach
+                    </div>
+                    @endif
                     @if (session('message'))
                     <h2 class="alert alert-secondary">{{ session('message') }}</h2>
                     @endif

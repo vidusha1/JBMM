@@ -20,6 +20,13 @@
     <div class="container-fluid">
         <div class="row justify-content-center">
             <div class="col-md-10">
+                @if ($errors->any())
+                <div class="alert alert-warning">
+                    @foreach ($errors->all() as $error)
+                    <div class="">{{ $error }}</div>
+                    @endforeach
+                </div>
+                @endif
                 <div class="card">
                     <div class="card-header bg-secondary">
                         <h5>Update Category</h5>
@@ -70,37 +77,32 @@
                                         }}</span>@enderror
                                 </div>
 
-                                <div class="form-group">
-                                    <label for="image">Status</label>
-                                    <div class="form-group clearfix">
-
-                                        @if ($category->status == 0)
-                                        <div class="icheck-success d-inline">
-                                            <input type="radio" id="radioPrimary1" name="0" checked="checked">
-                                            <label for="radioPrimary1">Active</label>
+                                    <div class="form-group">
+                                        <label for="image">Status</label>
+                                        <div class="form-group clearfix">
+                                            @if ($category->status == 0)                                                                                         
+                                                <div class="icheck-success d-inline">
+                                                    <input type="radio" name="status" value="0" checked="checked" id="radioSuccess1">
+                                                    <label for="radioSuccess1">Active</label>
+                                                </div>
+                                                <div class="icheck-danger d-inline mx-2">
+                                                    <input type="radio" name="status" value="1" id="radioDanger2">
+                                                    <label for="radioDanger2">Inactive</label>
+                                                </div>  
+                                            @endif
+                                            @if ($category->status == 1)
+                                            <div class="icheck-success d-inline">
+                                                <input type="radio" name="status" value="0" id="radioSuccess1">
+                                                <label for="radioSuccess1">Active</label>
+                                            </div>
+                                            <div class="icheck-danger d-inline mx-2">
+                                                <input type="radio" name="status" value="1" checked="checked" id="radioDanger2">
+                                                <label for="radioDanger2">Inactive</label>
+                                            </div>
+                                            @endif
                                         </div>
-                                        
-                                        <div class="icheck-danger d-inline">
-                                            <input type="radio" id="radioPrimary2" name="1">
-                                            <label for="radioPrimary2">Inactive</label>
-                                        </div>
-                                        @else
-                                        <div class="icheck-success d-inline">
-                                            <input type="radio" id="radioPrimary1" name="0" >
-                                            <label for="radioPrimary1">Active</label>
-                                        </div>
-
-                                        <div class="icheck-danger d-inline">
-                                            <input type="radio" id="radioPrimary2" name="1" checked="checked">
-                                            <label for="radioPrimary2">Inactive</label>
-                                        </div>
-                                        @endif
-                                        
-
                                     </div>
-                                    @error('status')<span class="text-danger" style="font-size: 14px">{{ $message
-                                        }}</span>@enderror
-                                </div>
+                                    @error('status')<span class="text-danger" style="font-size: 14px">{{ $message }}</span>@enderror
 
                                 <h4 class="mt-4" style="font-weight: bold">Meta Data</h4>
                                 <hr>

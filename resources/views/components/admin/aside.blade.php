@@ -50,7 +50,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="{{ route('brands.index') }}" class="nav-link">
+                    <a href="#" class="nav-link">
                         <i class="nav-icon fa-solid fa-code-branch"></i>
                         <p>Brands</p>
                     </a>

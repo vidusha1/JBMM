@@ -20,6 +20,13 @@
     <div class="container-fluid">
         <div class="row justify-content-center">
             <div class="col-md-10">
+                @if ($errors->any())
+                <div class="alert alert-warning">
+                    @foreach ($errors->all() as $error)
+                    <div class="">{{ $error }}</div>
+                    @endforeach
+                </div>
+                @endif
                 <div class="card">
                     <div class="card-header bg-secondary">                        
                             <h5>Categories</h5>                           
@@ -61,20 +68,18 @@
                                     <div class="form-group">
                                         <label for="image">Status</label>
                                         <div class="form-group clearfix">
-
                                             <div class="icheck-success d-inline">
-                                                <input type="radio" id="radioPrimary1" name="0" checked="checked">
-                                                <label for="radioPrimary1">Active</label>
+                                                <input type="radio" name="status" checked="" id="radioSuccess1">
+                                                <label for="radioSuccess1">Active</label>
                                             </div>
-
-                                            <div class="icheck-danger d-inline">
-                                                <input type="radio" id="radioPrimary2" name="1">
-                                                <label for="radioPrimary2">Inactive</label>
+                                            <div class="icheck-danger d-inline mx-2">
+                                                <input type="radio" name="status" id="radioDanger2">
+                                                <label for="radioDanger2">Inactive</label>
                                             </div>
-                                            
+                                             
                                         </div>
-                                        @error('status')<span class="text-danger" style="font-size: 14px">{{ $message }}</span>@enderror
                                     </div>
+                                    @error('status')<span class="text-danger" style="font-size: 14px">{{ $message }}</span>@enderror                                     
                                     
                                     <h4 class="mt-4" style="font-weight: bold">Meta Data</h4>                         
                                     <hr>    
