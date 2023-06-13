@@ -1,4 +1,4 @@
-@section('title', 'Categories')
+@section('title', 'Brands')
 @extends('layouts.admin.app')
 @section('content')
 
@@ -21,7 +21,7 @@
         </div>
         <div class="row mb-2">
             <div class="col-sm-6">
-                <h1 class="m-0">Categories</h1>
+                <h1 class="m-0">Brands</h1>
             </div>
             <!-- /.col -->
         </div>
@@ -31,7 +31,7 @@
 </div>
 
 <section class="content">
-    <livewire:admin.categories.index />
+    <livewire:admin.brand.index />
 </section>
 
 @endsection

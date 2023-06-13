@@ -42,8 +42,8 @@ Route::prefix('admin/')->middleware('auth', 'isAdmin')->group(function () {
     Route::prefix('categories/')->group(function () {
         Route::controller(CategoryController::class)->group(function () {
             Route::get('/', 'index')->name('categories.index');
-            Route::get('/create', 'create')->name('category.create');
-            Route::post('/create', 'store')->name('category.store');
+            Route::get('/category', 'create')->name('category.create');
+            Route::post('/category', 'store')->name('category.store');
             Route::get('/{category}/edit', 'edit')->name('category.edit');
             Route::put('/{category}/', 'update')->name('category.update');
             Route::get('/{category}/delete', 'destroy')->name('category.destroy');
@@ -52,6 +52,17 @@ Route::prefix('admin/')->middleware('auth', 'isAdmin')->group(function () {
 
     // Brand Route
     // Livewire
+    // Route::get('/brands', App\Http\Livewire\Admin\Brand\Index::class)->name('brands');
+
+    // Brand Controller
+    Route::prefix('brand/')->group(function () {
+        Route::controller(BrandsController::class)->group(function () {
+            Route::get('/', 'index')->name('brands');
+            Route::get('/brand', 'create')->name('brand.create');
+            Route::post('/brand', 'store')->name('brand.store');
+            Route::get('/{brand}/edit', 'edit')->name('brand.edit');
+        });
+    });
 
     // Colors
     Route::prefix('/colors')->group(function () {

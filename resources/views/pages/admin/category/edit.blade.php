@@ -32,7 +32,8 @@
                         <h5>Update Category</h5>
                     </div>
                     <div class="card-body">
-                        <form action="{{ url('admin/categories/' . $category->id ) }}" method="POST" enctype="multipart/form-data">
+                        <form action="{{ url('admin/categories/' . $category->id ) }}" method="POST"
+                            enctype="multipart/form-data">
                             @csrf
                             @method('PUT')
                             <div class="card-body">
@@ -41,7 +42,7 @@
                                         <div class="form-group">
                                             <label for="name">Title</label>
                                             <input type="text" class="form-control form-control-sm" id="name"
-                                               value="{{ $category->title }}" name="title">
+                                                value="{{ $category->title }}" name="title">
                                             @error('title')<span class="text-danger" style="font-size: 14px">{{ $message
                                                 }}</span>@enderror
                                         </div>
@@ -72,37 +73,40 @@
                                     <img src="{{ asset($category->image) }}" alt="" class="mt-2" width="75">
                                     <span class="mt-1" style="font-size: 12px">File Allowed images: jpg, gif, png.
                                         Maximum 1 image only.</span>
-                                       
+
                                     @error('image')<span class="text-danger" style="font-size: 14px">{{ $message
                                         }}</span>@enderror
                                 </div>
 
-                                    <div class="form-group">
-                                        <label for="image">Status</label>
-                                        <div class="form-group clearfix">
-                                            @if ($category->status == 0)                                                                                         
-                                                <div class="icheck-success d-inline">
-                                                    <input type="radio" name="status" value="0" checked="checked" id="radioSuccess1">
-                                                    <label for="radioSuccess1">Active</label>
-                                                </div>
-                                                <div class="icheck-danger d-inline mx-2">
-                                                    <input type="radio" name="status" value="1" id="radioDanger2">
-                                                    <label for="radioDanger2">Inactive</label>
-                                                </div>  
-                                            @endif
-                                            @if ($category->status == 1)
-                                            <div class="icheck-success d-inline">
-                                                <input type="radio" name="status" value="0" id="radioSuccess1">
-                                                <label for="radioSuccess1">Active</label>
-                                            </div>
-                                            <div class="icheck-danger d-inline mx-2">
-                                                <input type="radio" name="status" value="1" checked="checked" id="radioDanger2">
-                                                <label for="radioDanger2">Inactive</label>
-                                            </div>
-                                            @endif
+                                <div class="form-group">
+                                    <label for="image">Status</label>
+                                    <div class="form-group clearfix">
+                                        @if ($category->status == 0)
+                                        <div class="icheck-success d-inline">
+                                            <input type="radio" name="status" value="0" checked="checked"
+                                                id="radioSuccess1">
+                                            <label for="radioSuccess1">Active</label>
                                         </div>
+                                        <div class="icheck-danger d-inline mx-2">
+                                            <input type="radio" name="status" value="1" id="radioDanger2">
+                                            <label for="radioDanger2">Inactive</label>
+                                        </div>
+                                        @endif
+                                        @if ($category->status == 1)
+                                        <div class="icheck-success d-inline">
+                                            <input type="radio" name="status" value="0" id="radioSuccess1">
+                                            <label for="radioSuccess1">Active</label>
+                                        </div>
+                                        <div class="icheck-danger d-inline mx-2">
+                                            <input type="radio" name="status" value="1" checked="checked"
+                                                id="radioDanger2">
+                                            <label for="radioDanger2">Inactive</label>
+                                        </div>
+                                        @endif
                                     </div>
-                                    @error('status')<span class="text-danger" style="font-size: 14px">{{ $message }}</span>@enderror
+                                </div>
+                                @error('status')<span class="text-danger" style="font-size: 14px">{{ $message
+                                    }}</span>@enderror
 
                                 <h4 class="mt-4" style="font-weight: bold">Meta Data</h4>
                                 <hr>
@@ -130,8 +134,7 @@
                                 <div class="form-group">
                                     <label for="meta_description">Meta Description</label>
                                     <textarea type="text" class="form-control form-control-sm" id="meta_description"
-                                          name="meta_description"
-                                        rows="3">{{ $category->meta_description }}</textarea>
+                                        name="meta_description" rows="3">{{ $category->meta_description }}</textarea>
                                     @error('meta_description')<span class="text-danger" style="font-size: 14px">{{
                                         $message }}</span>@enderror
                                 </div>

@@ -29,8 +29,10 @@
         </div>
     </div>
 
+    @yield('scripts')
     @include('libraries.admin.scripts')
     @livewireScripts
+    @stack('script')
 </body>
 
 </html>
