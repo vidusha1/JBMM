@@ -3,6 +3,8 @@
 namespace App\Http;
 
 use App\Http\Middleware\AdminMiddelware;
+use App\Http\Middleware\NormalUserMiddelware;
+use App\Http\Middleware\UserMiddelware;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
 class Kernel extends HttpKernel

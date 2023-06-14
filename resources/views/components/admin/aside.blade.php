@@ -10,7 +10,7 @@
     <div class="sidebar">
         <!-- Sidebar user panel (optional) -->
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-            
+
         </div>
 
         <!-- Sidebar Menu -->
@@ -99,7 +99,7 @@
                             <a href="{{ route('orders.index') }}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Order Dashboard</p>
-                            </a>                           
+                            </a>
                         </li>
                     </ul>
                 </li>
@@ -113,30 +113,30 @@
                         </p>
                     </a>
                     <ul class="nav nav-treeview">
-                        <li class="nav-item">                            
+                        <li class="nav-item">
                             <a href="{{ route('reports.index') }}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Dashboard</p>
                             </a>
                         </li>
-                        <li class="nav-item">                            
+                        <li class="nav-item">
                             <a href="#" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Sales</p>
                             </a>
                         </li>
-                        <li class="nav-item">                            
+                        <li class="nav-item">
                             <a href="#" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Inventory</p>
                             </a>
                         </li>
-                        <li class="nav-item">                            
+                        <li class="nav-item">
                             <a href="#" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Statements</p>
                             </a>
-                        </li>                        
+                        </li>
                     </ul>
                 </li>
 
@@ -175,7 +175,7 @@
                             <a href="{{ route('invoices.index') }}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>All Invoices</p>
-                            </a>                           
+                            </a>
                         </li>
                     </ul>
                 </li>
@@ -205,7 +205,7 @@
                 <li class="nav-header">Other Elements</li>
 
                 <li class="nav-item">
-                    <a href="{{ route('welcome') }}" class="nav-link">
+                    <a href="{{ route('frontend.index') }}" class="nav-link">
                         <i class="nav-icon fa-solid fa-house"></i>
                         <p>Home</p>
                     </a>

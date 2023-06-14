@@ -17,7 +17,7 @@ class AdminMiddelware
     public function handle(Request $request, Closure $next): Response
     {
         if (!Auth::user()->role == '2') {
-            return redirect('/home')->with('status', "Sorry Access Denied. You Dont't Have Credentails Access This Page Please Contact Admin");
+            return redirect(route('frontend.index'))->with('status', 'Access Denied. As you are not Admin');
         }
         return $next($request);
     }
