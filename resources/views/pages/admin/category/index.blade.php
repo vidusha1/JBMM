@@ -5,7 +5,7 @@
     <!-- Content Header (Page header) -->
     <div class="content-header">
         <div class="container-fluid">
-            <div class="row">
+            <div class="row message">
                 <div class="col-md-12">
                     @if ($errors->any())
                         <div class="alert alert-warning">
@@ -15,7 +15,7 @@
                         </div>
                     @endif
                     @if (session('message'))
-                        <h2 class="alert alert-secondary">{{ session('message') }}</h2>
+                        <h2 class="message alert alert-secondary">{{ session('message') }}</h2>
                     @endif
                 </div>
             </div>
@@ -35,3 +35,9 @@
     </section>
 
 @endsection
+
+<script>
+    setTimeout(function() {
+        $('.message').fadeOut('fast');
+    }, 5000);
+</script>

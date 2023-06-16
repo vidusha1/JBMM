@@ -57,18 +57,18 @@ Route::controller(CheckoutController::class)->group(function () {
 // Admin Routing
 
 
-Route::prefix('/')->middleware('auth', 'isAdmin')->group(function () {
-    Route::get('admin/dashboard', [AdminDashboardController::class, 'index'])->name('admin.dashboard');
+Route::prefix('/admin')->middleware('auth', 'isAdmin')->group(function () {
+    Route::get('/dashboard', [AdminDashboardController::class, 'index'])->name('admin.dashboard');
 
     // Category Route
-    Route::prefix('admin/categories/')->group(function () {
+    Route::prefix('/categories/')->group(function () {
         Route::controller(CategoryController::class)->group(function () {
-            Route::get('admin/', 'index')->name('categories.index');
-            Route::get('admin/category', 'create')->name('category.create');
-            Route::post('admin/category', 'store')->name('category.store');
-            Route::get('admin/{category}/edit', 'edit')->name('category.edit');
-            Route::put('admin/{category}/', 'update')->name('category.update');
-            Route::get('admin/{category}/delete', 'destroy')->name('category.destroy');
+            Route::get('/', 'index')->name('categories.index');
+            Route::get('/category', 'create')->name('category.create');
+            Route::post('/category', 'store')->name('category.store');
+            Route::get('/{category}/edit', 'edit')->name('category.edit');
+            Route::put('/{category}/', 'update')->name('category.update');
+            Route::get('/{category}/delete', 'destroy')->name('category.destroy');
         });
     });
 

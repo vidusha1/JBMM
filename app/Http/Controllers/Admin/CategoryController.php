@@ -43,7 +43,7 @@ class CategoryController extends Controller
         $category->meta_title = $validatedData['meta_title'];
         $category->meta_keyword = $validatedData['meta_keyword'];
         $category->meta_description = $validatedData['meta_description'];
-        $category->status = $request->status == true ? '1' : '0';
+        $category->status = $request->status == true ? '0' : '1';
         $category->created_by = Auth::user()->id;
 
         $category->save();

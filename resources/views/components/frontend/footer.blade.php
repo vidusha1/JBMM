@@ -1,83 +1,159 @@
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-secondary mt-5 pt-5">
-        <div class="row px-xl-5 pt-5">
-            <div class="col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5">
-                <h5 class="text-secondary text-uppercase mb-4">Get In Touch</h5>
-                <p class="mb-4">No dolore ipsum accusam no lorem. Invidunt sed clita kasd clita et et dolor sed dolor.
-                    Rebum tempor no vero est magna amet no</p>
-                <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>123 Street, New York, USA</p>
-                <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>info@example.com</p>
-                <p class="mb-0"><i class="fa fa-phone-alt text-primary mr-3"></i>+012 345 67890</p>
-            </div>
-            <div class="col-lg-8 col-md-12">
-                <div class="row">
-                    <div class="col-md-4 mb-5">
-                        <h5 class="text-secondary text-uppercase mb-4">Quick Shop</h5>
-                        <div class="d-flex flex-column justify-content-start">
-                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
-                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our
-                                Shop</a>
-                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Shop
-                                Detail</a>
-                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Shopping
-                                Cart</a>
-                            <a class="text-secondary mb-2" href="#"><i
-                                    class="fa fa-angle-right mr-2"></i>Checkout</a>
-                            <a class="text-secondary" href="#"><i class="fa fa-angle-right mr-2"></i>Contact
-                                Us</a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-5">
-                        <h5 class="text-secondary text-uppercase mb-4">My Account</h5>
-                        <div class="d-flex flex-column justify-content-start">
-                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
-                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our
-                                Shop</a>
-                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Shop
-                                Detail</a>
-                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Shopping
-                                Cart</a>
-                            <a class="text-secondary mb-2" href="#"><i
-                                    class="fa fa-angle-right mr-2"></i>Checkout</a>
-                            <a class="text-secondary" href="#"><i class="fa fa-angle-right mr-2"></i>Contact
-                                Us</a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-5">
-                        <h5 class="text-secondary text-uppercase mb-4">Newsletter</h5>
-                        <p>Duo stet tempor ipsum sit amet magna ipsum tempor est</p>
-                        <form action="">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Your Email Address">
-                                <div class="input-group-append">
-                                    <button class="btn btn-primary">Sign Up</button>
-                                </div>
-                            </div>
-                        </form>
-                        <h6 class="text-secondary text-uppercase mt-4 mb-3">Follow Us</h6>
-                        <div class="d-flex">
-                            <a class="btn btn-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-primary btn-square mr-2" href="#"><i
-                                    class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-primary btn-square mr-2" href="#"><i
-                                    class="fab fa-linkedin-in"></i></a>
-                            <a class="btn btn-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row border-top mx-xl-5 py-4" style="border-color: rgba(256, 256, 256, .1) !important;">
-            <div class="col-md-6 px-xl-0">
-                <p class="mb-md-0 text-center text-md-left text-secondary">
-                    &copy; <a class="text-primary" href="#">Domain</a>. All Rights Reserved. Designed
-                    by
-                    <a class="text-primary" href="https://htmlcodex.com">HTML Codex</a>
-                </p>
-            </div>
-            <div class="col-md-6 px-xl-0 text-center text-md-right">
-                <img class="img-fluid" src="img/payments.png" alt="">
-            </div>
-        </div>
-    </div>
-    <!-- Footer End -->
+ <footer class="footer footer-2">
+     <div class="icon-boxes-container">
+         <div class="container">
+             <div class="row">
+                 <div class="col-sm-6 col-lg-3">
+                     <div class="icon-box icon-box-side">
+                         <span class="icon-box-icon">
+                             <i class="icon-rocket"></i>
+                         </span>
+
+                         <div class="icon-box-content">
+                             <h3 class="icon-box-title">Free Shipping</h3><!-- End .icon-box-title -->
+                             <p>Orders $50 or more</p>
+                         </div><!-- End .icon-box-content -->
+                     </div><!-- End .icon-box -->
+                 </div><!-- End .col-sm-6 col-lg-3 -->
+
+                 <div class="col-sm-6 col-lg-3">
+                     <div class="icon-box icon-box-side">
+                         <span class="icon-box-icon">
+                             <i class="icon-rotate-left"></i>
+                         </span>
+
+                         <div class="icon-box-content">
+                             <h3 class="icon-box-title">Free Returns</h3><!-- End .icon-box-title -->
+                             <p>Within 30 days</p>
+                         </div><!-- End .icon-box-content -->
+                     </div><!-- End .icon-box -->
+                 </div><!-- End .col-sm-6 col-lg-3 -->
+
+                 <div class="col-sm-6 col-lg-3">
+                     <div class="icon-box icon-box-side">
+                         <span class="icon-box-icon">
+                             <i class="icon-info-circle"></i>
+                         </span>
+
+                         <div class="icon-box-content">
+                             <h3 class="icon-box-title">Get 20% Off 1 Item</h3><!-- End .icon-box-title -->
+                             <p>When you sign up</p>
+                         </div><!-- End .icon-box-content -->
+                     </div><!-- End .icon-box -->
+                 </div><!-- End .col-sm-6 col-lg-3 -->
+
+                 <div class="col-sm-6 col-lg-3">
+                     <div class="icon-box icon-box-side">
+                         <span class="icon-box-icon">
+                             <i class="icon-life-ring"></i>
+                         </span>
+
+                         <div class="icon-box-content">
+                             <h3 class="icon-box-title">We Support</h3><!-- End .icon-box-title -->
+                             <p>24/7 amazing services</p>
+                         </div><!-- End .icon-box-content -->
+                     </div><!-- End .icon-box -->
+                 </div><!-- End .col-sm-6 col-lg-3 -->
+             </div><!-- End .row -->
+         </div><!-- End .container -->
+     </div><!-- End .icon-boxes-container -->
+
+     <div class="footer-middle border-0">
+         <div class="container">
+             <div class="row">
+                 <div class="col-sm-12 col-lg-6">
+                     <div class="widget widget-about">
+                         <img src="{{ asset('frontend/img/logo.jpg') }}" class="footer-logo" alt="Footer Logo"
+                             width="105" height="25">
+                         <p>Praesent dapibus, neque id cursus ucibus, tortor neque egestas augue, eu vulputate magna
+                             eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
+                             facilisis luctus, metus. </p>
+
+                         <div class="widget-about-info">
+                             <div class="row">
+                                 <div class="col-sm-6 col-md-4">
+                                     <span class="widget-about-title">Got Question? Call us 24/7</span>
+                                     <a href="tel:123456789">+0123 456 789</a>
+                                 </div><!-- End .col-sm-6 -->
+                                 <div class="col-sm-6 col-md-8">
+                                     <span class="widget-about-title">Payment Method</span>
+                                     <figure class="footer-payments">
+                                         <img src="{{ asset('frontend/img/payments.png') }}" alt="Payment methods"
+                                             width="272" height="20">
+                                     </figure><!-- End .footer-payments -->
+                                 </div><!-- End .col-sm-6 -->
+                             </div><!-- End .row -->
+                         </div><!-- End .widget-about-info -->
+                     </div><!-- End .widget about-widget -->
+                 </div><!-- End .col-sm-12 col-lg-3 -->
+
+                 <div class="col-sm-4 col-lg-2">
+                     <div class="widget">
+                         <h4 class="widget-title">Information</h4><!-- End .widget-title -->
+
+                         <ul class="widget-list">
+                             <li><a href="about.html">About JBMM</a></li>
+                             <li><a href="#">How to shop on JBMM</a></li>
+                             <li><a href="faq.html">FAQ</a></li>
+                             <li><a href="contact.html">Contact us</a></li>
+                             <li><a href="login.html">Log in</a></li>
+                         </ul><!-- End .widget-list -->
+                     </div><!-- End .widget -->
+                 </div><!-- End .col-sm-4 col-lg-3 -->
+
+                 <div class="col-sm-4 col-lg-2">
+                     <div class="widget">
+                         <h4 class="widget-title">Customer Service</h4><!-- End .widget-title -->
+
+                         <ul class="widget-list">
+                             <li><a href="#">Payment Methods</a></li>
+                             <li><a href="#">Money-back guarantee!</a></li>
+                             <li><a href="#">Returns</a></li>
+                             <li><a href="#">Shipping</a></li>
+                             <li><a href="#">Terms and conditions</a></li>
+                             <li><a href="#">Privacy Policy</a></li>
+                         </ul><!-- End .widget-list -->
+                     </div><!-- End .widget -->
+                 </div><!-- End .col-sm-4 col-lg-3 -->
+
+                 <div class="col-sm-4 col-lg-2">
+                     <div class="widget">
+                         <h4 class="widget-title">My Account</h4><!-- End .widget-title -->
+
+                         <ul class="widget-list">
+                             <li><a href="#">Sign In</a></li>
+                             <li><a href="cart.html">View Cart</a></li>
+                             <li><a href="#">My Wishlist</a></li>
+                             <li><a href="#">Track My Order</a></li>
+                             <li><a href="#">Help</a></li>
+                         </ul><!-- End .widget-list -->
+                     </div><!-- End .widget -->
+                 </div><!-- End .col-sm-64 col-lg-3 -->
+             </div><!-- End .row -->
+         </div><!-- End .container -->
+     </div><!-- End .footer-middle -->
+
+     <div class="footer-bottom">
+         <div class="container">
+             <p class="footer-copyright">Copyright © 2023 JBMM Store. All Rights Reserved.</p>
+             <!-- End .footer-copyright -->
+             <ul class="footer-menu">
+                 <li><a href="#">Terms Of Use</a></li>
+                 <li><a href="#">Privacy Policy</a></li>
+             </ul><!-- End .footer-menu -->
+
+             <div class="social-icons social-icons-color">
+                 <span class="social-label">Social Media</span>
+                 <a href="#" class="social-icon social-facebook" title="Facebook" target="_blank"><i
+                         class="icon-facebook-f"></i></a>
+                 <a href="#" class="social-icon social-twitter" title="Twitter" target="_blank"><i
+                         class="icon-twitter"></i></a>
+                 <a href="#" class="social-icon social-instagram" title="Instagram" target="_blank"><i
+                         class="icon-instagram"></i></a>
+                 <a href="#" class="social-icon social-youtube" title="Youtube" target="_blank"><i
+                         class="icon-youtube"></i></a>
+                 <a href="#" class="social-icon social-pinterest" title="Pinterest" target="_blank"><i
+                         class="icon-pinterest"></i></a>
+             </div><!-- End .soial-icons -->
+         </div><!-- End .container -->
+     </div><!-- End .footer-bottom -->
+ </footer><!-- End .footer -->

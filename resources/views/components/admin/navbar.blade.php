@@ -10,7 +10,7 @@
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
         <!-- Navbar Search -->
-        <li class="nav-item">
+        {{-- <li class="nav-item">
             <a class="nav-link" data-widget="navbar-search" href="#" role="button">
                 <i class="fas fa-search"></i>
             </a>
@@ -30,14 +30,14 @@
                     </div>
                 </form>
             </div>
-        </li>
+        </li> --}}
 
-        <div class="btn-group align-items-center mx-3">
-            <div type="button" class="dropdown-toggle text-capitalize" data-bs-toggle="dropdown"
-                data-bs-display="static" aria-expanded="false">
+        <div class="btn-group dropstart">
+            <button type="button" class="dropdown-toggle btn btn-sm text-white" style="background: transparent"
+                data-bs-toggle="dropdown" aria-expanded="false">
                 {{ Auth::user()->username }}
-            </div>
-            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+            </button>
+            <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">My Profile</a></li>
                 <li>
                     <a class="dropdown-item" href="{{ route('logout') }}"
@@ -50,7 +50,6 @@
                         @csrf
                     </form>
                 </li>
-
             </ul>
         </div>
 
