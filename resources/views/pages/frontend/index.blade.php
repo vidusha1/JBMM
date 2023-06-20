@@ -10,72 +10,92 @@
                             }
                         }
                     }'>
-            <div class="intro-slide" style="background-image: url({{ asset('frontend/img/slide-2.jpg') }});">
+            <div class="intro-slide" style="background-image: url({{ asset('frontend/img/banner_image.jpeg') }}); background-repeat: no-repeat; background-position: initial; background-size: cover;">   
                 <div class="container intro-content">
                     <div class="row">
-                        <div class="col-auto offset-lg-3 intro-col">
-                            <h3 class="intro-subtitle">Trade-In Offer</h3><!-- End .h3 intro-subtitle -->
-                            <h1 class="intro-title">Handcrafted Carpets <br>Latest Model
-                                <span>
-                                    <sup class="font-weight-light">from</sup>
-                                    <span class="text-primary">$999<sup>,99</sup></span>
-                                </span>
-                            </h1><!-- End .intro-title -->
-
-                            <a href="{{ route('frontend.category.index') }}" class="btn btn-outline-primary-2">
-                                <span>Shop Now</span>
-                                <i class="icon-long-arrow-right"></i>
-                            </a>
-                        </div><!-- End .col-auto offset-lg-3 -->
+                         
                     </div><!-- End .row -->
                 </div><!-- End .container intro-content -->
             </div><!-- End .intro-slide -->
 
-            <div class="intro-slide" style="background-image: url({{ asset('frontend/img/slide-2.jpg') }});">
+            <div class="intro-slide"
+                style="background-image: url({{ asset('frontend/img/banner_image.jpeg') }}); background-repeat: no-repeat; background-position: initial; background-size: cover;">
                 <div class="container intro-content">
                     <div class="row">
-                        <div class="col-auto offset-lg-3 intro-col">
-                            <h3 class="intro-subtitle">Trevel & Outdoor</h3><!-- End .h3 intro-subtitle -->
-                            <h1 class="intro-title">Original Outdoor <br>Beanbag
-                                <span>
-                                    <sup class="font-weight-light line-through">$89,99</sup>
-                                    <span class="text-primary">$29<sup>,99</sup></span>
-                                </span>
-                            </h1><!-- End .intro-title -->
-
-                            <a href="{{ route('frontend.category.index') }}" class="btn btn-outline-primary-2">
-                                <span>Shop Now</span>
-                                <i class="icon-long-arrow-right"></i>
-                            </a>
-                        </div><!-- End .col-auto offset-lg-3 -->
+            
                     </div><!-- End .row -->
                 </div><!-- End .container intro-content -->
             </div><!-- End .intro-slide -->
 
-            <div class="intro-slide" style="background-image: url({{ asset('frontend/img/slide-2.jpg') }});">
-                <div class="container intro-content">
-                    <div class="row">
-                        <div class="col-auto offset-lg-3 intro-col">
-                            <h3 class="intro-subtitle">Fashion Promotions</h3><!-- End .h3 intro-subtitle -->
-                            <h1 class="intro-title">Tan Suede <br>Biker Jacket
-                                <span>
-                                    <sup class="font-weight-light line-through">$240,00</sup>
-                                    <span class="text-primary">$180<sup>,99</sup></span>
-                                </span>
-                            </h1><!-- End .intro-title -->
-
-                            <a href="{{ route('frontend.category.index') }}" class="btn btn-outline-primary-2">
-                                <span>Shop Now</span>
-                                <i class="icon-long-arrow-right"></i>
-                            </a>
-                        </div><!-- End .col-auto offset-lg-3 -->
-                    </div><!-- End .row -->
-                </div><!-- End .container intro-content -->
+          <div class="intro-slide"
+            style="background-image: url({{ asset('frontend/img/banner_image.jpeg') }}); background-repeat: no-repeat; background-position: initial; background-size: cover;">
+            <div class="container intro-content">
+                <div class="row">
+        
+                </div><!-- End .row -->
+            </div><!-- End .container intro-content -->
             </div><!-- End .intro-slide -->
         </div><!-- End .owl-carousel owl-simple -->
 
         <span class="slider-loader"></span><!-- End .slider-loader -->
     </div><!-- End .intro-slider-container -->
+    <div class="icon-boxes-container" style="background: lightblue">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="icon-box icon-box-side">
+                        <span class="icon-box-icon">
+                            <i class="icon-rocket"></i>
+                        </span>
+    
+                        <div class="icon-box-content">
+                            <h3 class="icon-box-title">Free Shipping</h3><!-- End .icon-box-title -->
+                            <p>Orders $50 or more</p>
+                        </div><!-- End .icon-box-content -->
+                    </div><!-- End .icon-box -->
+                </div><!-- End .col-sm-6 col-lg-3 -->
+    
+                <div class="col-sm-6 col-lg-3">
+                    <div class="icon-box icon-box-side">
+                        <span class="icon-box-icon">
+                            <i class="icon-rotate-left"></i>
+                        </span>
+    
+                        <div class="icon-box-content">
+                            <h3 class="icon-box-title">Free Returns</h3><!-- End .icon-box-title -->
+                            <p>Within 30 days</p>
+                        </div><!-- End .icon-box-content -->
+                    </div><!-- End .icon-box -->
+                </div><!-- End .col-sm-6 col-lg-3 -->
+    
+                <div class="col-sm-6 col-lg-3">
+                    <div class="icon-box icon-box-side">
+                        <span class="icon-box-icon">
+                            <i class="icon-info-circle"></i>
+                        </span>
+    
+                        <div class="icon-box-content">
+                            <h3 class="icon-box-title">Get 20% Off 1 Item</h3><!-- End .icon-box-title -->
+                            <p>When you sign up</p>
+                        </div><!-- End .icon-box-content -->
+                    </div><!-- End .icon-box -->
+                </div><!-- End .col-sm-6 col-lg-3 -->
+    
+                <div class="col-sm-6 col-lg-3">
+                    <div class="icon-box icon-box-side">
+                        <span class="icon-box-icon">
+                            <i class="icon-life-ring"></i>
+                        </span>
+    
+                        <div class="icon-box-content">
+                            <h3 class="icon-box-title">We Support</h3><!-- End .icon-box-title -->
+                            <p>24/7 amazing services</p>
+                        </div><!-- End .icon-box-content -->
+                    </div><!-- End .icon-box -->
+                </div><!-- End .col-sm-6 col-lg-3 -->
+            </div><!-- End .row -->
+        </div><!-- End .container -->
+    </div><!-- End .icon-boxes-container -->
 
     <div class="mb-4"></div><!-- End .mb-2 -->
 
@@ -114,7 +134,7 @@
                     <a href="{{ route('frontend.category.index') }}" class="cat-block">
                         <figure>
                             <span>
-                                <img src="{{ asset('frontend/img/lucio.jpeg') }}" alt="Category image">
+                                <img src="{{ asset('frontend/img/lucio.jpeg') }}" alt="Category image" style="min-height: 164px;">
                             </span>
                         </figure>
 
@@ -167,7 +187,7 @@
 
     <div class="mb-2"></div><!-- End .mb-2 -->
 
-    <div class="container">
+    {{-- <div class="container">
         <div class="row">
             <div class="col-sm-6 col-lg-3">
                 <div class="banner banner-overlay">
@@ -217,7 +237,7 @@
                 </div><!-- End .banner -->
             </div><!-- End .col-lg-6 -->
         </div><!-- End .row -->
-    </div><!-- End .container -->
+    </div><!-- End .container --> --}}
 
     <div class="mb-3"></div><!-- End .mb-3 -->
 
@@ -236,9 +256,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" id="hot-elec-link" data-toggle="tab" href="#hot-elec-tab"
-                                role="tab" aria-controls="hot-elec-tab" aria-selected="false">Electronics</a>
+                                role="tab" aria-controls="hot-elec-tab" aria-selected="false">Populor</a>
                         </li>
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <a class="nav-link" id="hot-furn-link" data-toggle="tab" href="#hot-furn-tab"
                                 role="tab" aria-controls="hot-furn-tab" aria-selected="false">Furniture</a>
                         </li>
@@ -249,7 +269,7 @@
                         <li class="nav-item">
                             <a class="nav-link" id="hot-acc-link" data-toggle="tab" href="#hot-acc-tab" role="tab"
                                 aria-controls="hot-acc-tab" aria-selected="false">Accessories</a>
-                        </li>
+                        </li> --}}
                     </ul>
                 </div><!-- End .heading-right -->
             </div><!-- End .heading -->
@@ -5367,3 +5387,11 @@
         </div><!-- End .owl-carousel -->
     </div><!-- End .container -->
 @endsection
+
+<style>
+@media screen and (min-width: 992px){
+    .intro-slider-container, .intro-slide {
+    height: 600px !important;
+    }
+}
+</style>

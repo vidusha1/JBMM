@@ -1,45 +1,48 @@
         <header class="header header-10 header-intro-clearance">
-            <div class="header-top">
-                <div class="container">
-                    <div class="header-left">
-                        <a href="tel:#"><i class="icon-phone"></i>Call: +0123 456 789</a>
-                    </div><!-- End .header-left -->
-
-                    <div class="header-right">
-
-                        <ul class="top-menu">
-                            <li>
-                                <a href="#">Links</a>
-                                <ul>
-                                    <li>
-                                        <div class="header-dropdown">
-                                            <a href="#">USD</a>
-                                            <div class="header-menu">
-                                                <ul>
-                                                    <li><a href="#">Eur</a></li>
-                                                    <li><a href="#">Usd</a></li>
-                                                </ul>
-                                            </div><!-- End .header-menu -->
-                                        </div><!-- End .header-dropdown -->
-                                    </li>
-                                    <li>
-                                        <div class="header-dropdown">
-                                            <a href="#">Engligh</a>
-                                            <div class="header-menu">
-                                                <ul>
-                                                    <li><a href="#">English</a></li>
-                                                    <li><a href="#">French</a></li>
-                                                    <li><a href="#">Spanish</a></li>
-                                                </ul>
-                                            </div><!-- End .header-menu -->
-                                        </div><!-- End .header-dropdown -->
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul><!-- End .top-menu -->
-                    </div><!-- End .header-right -->
-                </div><!-- End .container -->
-            </div><!-- End .header-top -->
+           <div class="header-top">
+            <div class="container">
+                <div class="header-left">
+                    <a href="tel:#"><i class="icon-phone"></i>Call: +0123 456 789</a>
+                </div><!-- End .header-left -->
+        
+                <div class="header-right">
+        
+                    <ul class="top-menu">
+                        <li>
+                            <a href="#">Links</a>
+                            <ul>
+                                <li>
+                                    <div class="header-dropdown">
+                                        <a href="#">USD</a>
+                                        <div class="header-menu">
+                                            <ul>
+                                                <li><a href="#">Eur</a></li>
+                                                <li><a href="#">Usd</a></li>
+                                            </ul>
+                                        </div><!-- End .header-menu -->
+                                    </div><!-- End .header-dropdown -->
+                                </li>
+                                <li>
+                                    <div class="header-dropdown">
+                                        <a href="#">Engligh</a>
+                                        <div class="header-menu">
+                                            <ul>
+                                                <li><a href="#">English</a></li>
+                                                <li><a href="#">French</a></li>
+                                                <li><a href="#">Spanish</a></li>
+                                            </ul>
+                                        </div><!-- End .header-menu -->
+                                    </div><!-- End .header-dropdown -->
+                                </li>
+                                <li class="login">
+                                    <a href="#signin-modal" data-toggle="modal">Sign in / Sign up</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul><!-- End .top-menu -->
+                </div><!-- End .header-right -->
+            </div><!-- End .container -->
+        </div><!-- End .header-top -->
 
             <div class="header-middle">
                 <div class="container">
@@ -50,7 +53,7 @@
                         </button>
 
                         <a href="{{ route('frontend.index') }}" class="logo">
-                            <img src="{{ asset('frontend/img/logo.jpg') }}" alt="JBMM" width="150"
+                            <img src="{{ asset('frontend/img/logo.jpg') }}" alt="JBMM" width="200"
                                 height="35">
                         </a>
                     </div><!-- End .header-left -->
@@ -104,6 +107,12 @@
 
                     <div class="header-right">
                         <div class="header-dropdown-link">
+
+                            {{-- <a href="{{ route('frontend.wishlist.index') }}" class="wishlist-link">
+                                <i class="icon-user-o"></i>
+                                <span class="wishlist-count">3</span>
+                                <span class="wishlist-txt">Wishlist</span>
+                            </a> --}}
 
                             <a href="{{ route('frontend.wishlist.index') }}" class="wishlist-link">
                                 <i class="icon-heart-o"></i>
@@ -199,79 +208,7 @@
                                 <nav class="side-nav">
                                     <ul class="menu-vertical sf-arrows">
 
-                                        <li class="megamenu-container">
-                                            <a class="sf-with-ul" href="#">Furniture</a>
-
-                                            <div class="megamenu">
-                                                <div class="row no-gutters">
-                                                    <div class="col-md-8">
-                                                        <div class="menu-col">
-                                                            <div class="row">
-                                                                <div class="col-md-6">
-                                                                    <div class="menu-title">Bedroom</div>
-                                                                    <!-- End .menu-title -->
-                                                                    <ul>
-                                                                        <li><a href="#">Beds, Frames & Bases</a>
-                                                                        </li>
-                                                                        <li><a href="#">Dressers</a></li>
-                                                                        <li><a href="#">Nightstands</a></li>
-                                                                        <li><a href="#">Kids' Beds &
-                                                                                Headboards</a></li>
-                                                                        <li><a href="#">Armoires</a></li>
-                                                                    </ul>
-
-                                                                    <div class="menu-title">Living Room</div>
-                                                                    <!-- End .menu-title -->
-                                                                    <ul>
-                                                                        <li><a href="#">Coffee Tables</a></li>
-                                                                        <li><a href="#">Chairs</a></li>
-                                                                        <li><a href="#">Tables</a></li>
-                                                                        <li><a href="#">Futons & Sofa Beds</a>
-                                                                        </li>
-                                                                        <li><a href="#">Cabinets & Chests</a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div><!-- End .col-md-6 -->
-
-                                                                <div class="col-md-6">
-                                                                    <div class="menu-title">Office</div>
-                                                                    <!-- End .menu-title -->
-                                                                    <ul>
-                                                                        <li><a href="#">Office Chairs</a></li>
-                                                                        <li><a href="#">Desks</a></li>
-                                                                        <li><a href="#">Bookcases</a></li>
-                                                                        <li><a href="#">File Cabinets</a></li>
-                                                                        <li><a href="#">Breakroom Tables</a></li>
-                                                                    </ul>
-
-                                                                    <div class="menu-title">Kitchen & Dining</div>
-                                                                    <!-- End .menu-title -->
-                                                                    <ul>
-                                                                        <li><a href="#">Dining Sets</a></li>
-                                                                        <li><a href="#">Kitchen Storage
-                                                                                Cabinets</a></li>
-                                                                        <li><a href="#">Bakers Racks</a></li>
-                                                                        <li><a href="#">Dining Chairs</a></li>
-                                                                        <li><a href="#">Dining Room Tables</a>
-                                                                        </li>
-                                                                        <li><a href="#">Bar Stools</a></li>
-                                                                    </ul>
-                                                                </div><!-- End .col-md-6 -->
-                                                            </div><!-- End .row -->
-                                                        </div><!-- End .menu-col -->
-                                                    </div><!-- End .col-md-8 -->
-
-                                                    <div class="col-md-4">
-                                                        <div class="banner banner-overlay">
-                                                            <a href="category.html" class="banner banner-menu">
-                                                                <img src="assets/images/demos/demo-13/menu/banner-2.jpg"
-                                                                    alt="Banner">
-                                                            </a>
-                                                        </div><!-- End .banner banner-overlay -->
-                                                    </div><!-- End .col-md-4 -->
-                                                </div><!-- End .row -->
-                                            </div><!-- End .megamenu -->
-                                        </li>
+                                      
                                         <li class="megamenu-container">
                                             <a class="sf-with-ul" href="#">Cooking</a>
 
@@ -321,8 +258,8 @@
                                                         <div class="col-md-4">
                                                             <div class="banner">
                                                                 <a href="#">
-                                                                    <img src="assets/images/demos/demo-13/menu/1.jpg"
-                                                                        alt="image">
+                                                                    {{-- <img src="assets/images/demos/demo-13/menu/1.jpg"
+                                                                        alt="image"> --}}
                                                                 </a>
                                                             </div><!-- End .banner -->
                                                         </div><!-- End .col-md-4 -->
@@ -330,8 +267,8 @@
                                                         <div class="col-md-4">
                                                             <div class="banner">
                                                                 <a href="#">
-                                                                    <img src="assets/images/demos/demo-13/menu/2.jpg"
-                                                                        alt="image">
+                                                                    {{-- <img src="assets/images/demos/demo-13/menu/2.jpg"
+                                                                        alt="image"> --}}
                                                                 </a>
                                                             </div><!-- End .banner -->
                                                         </div><!-- End .col-md-4 -->
@@ -339,8 +276,8 @@
                                                         <div class="col-md-4">
                                                             <div class="banner">
                                                                 <a href="#">
-                                                                    <img src="assets/images/demos/demo-13/menu/3.jpg"
-                                                                        alt="image">
+                                                                    {{-- <img src="assets/images/demos/demo-13/menu/3.jpg"
+                                                                        alt="image"> --}}
                                                                 </a>
                                                             </div><!-- End .banner -->
                                                         </div><!-- End .col-md-4 -->
@@ -349,11 +286,12 @@
                                             </div><!-- End .megamenu -->
                                         </li>                                        
                                         <li><a href="#">Home Appliances</a></li>
-                                        <li><a href="#">Healthy & Beauty</a></li>
-                                        <li><a href="#">Shoes & Boots</a></li>
-                                        <li><a href="#">Smart Phones</a></li>
-                                        <li><a href="#">TV & Audio</a></li>
-                                        <li><a href="#">Gift Ideas</a></li>
+                                        <li><a href="#">Handcrafted Carpets</a></li>
+                                        <li><a href="#">Kitchen Tools</a></li>
+                                        <li><a href="#">Moroccan Pottery</a></li>
+                                        <li><a href="#">Oak Barrels</a></li>
+                                        <li><a href="#">Traditional Arabic Items</a></li>
+                                        <li><a href="#">Turkish Pottery</a></li>
                                     </ul><!-- End .menu-vertical -->
                                 </nav><!-- End .side-nav -->
                             </div><!-- End .dropdown-menu -->
