@@ -22,7 +22,7 @@
                                 </span>
                             </h1><!-- End .intro-title -->
 
-                            <a href="category.html" class="btn btn-outline-primary-2">
+                            <a href="{{ route('frontend.category.index') }}" class="btn btn-outline-primary-2">
                                 <span>Shop Now</span>
                                 <i class="icon-long-arrow-right"></i>
                             </a>
@@ -43,7 +43,7 @@
                                 </span>
                             </h1><!-- End .intro-title -->
 
-                            <a href="category.html" class="btn btn-outline-primary-2">
+                            <a href="{{ route('frontend.category.index') }}" class="btn btn-outline-primary-2">
                                 <span>Shop Now</span>
                                 <i class="icon-long-arrow-right"></i>
                             </a>
@@ -64,7 +64,7 @@
                                 </span>
                             </h1><!-- End .intro-title -->
 
-                            <a href="category.html" class="btn btn-outline-primary-2">
+                            <a href="{{ route('frontend.category.index') }}" class="btn btn-outline-primary-2">
                                 <span>Shop Now</span>
                                 <i class="icon-long-arrow-right"></i>
                             </a>
@@ -85,7 +85,7 @@
         <div class="cat-blocks-container">
             <div class="row">
                 <div class="col-6 col-sm-4 col-lg-2">
-                    <a href="category.html" class="cat-block">
+                    <a href="{{ route('frontend.category.index') }}" class="cat-block">
                         <figure>
                             <span>
                                 <img src="{{ asset('frontend/img/utensils.jpg') }}" alt="Category image">
@@ -98,7 +98,7 @@
                 </div><!-- End .col-sm-4 col-lg-2 -->
 
                 <div class="col-6 col-sm-4 col-lg-2">
-                    <a href="category.html" class="cat-block">
+                    <a href="{{ route('frontend.category.index') }}" class="cat-block">
                         <figure>
                             <span>
                                 <img src="{{ asset('frontend/img/carpet.jpg') }}" alt="Category image">
@@ -111,7 +111,7 @@
                 </div><!-- End .col-sm-4 col-lg-2 -->
 
                 <div class="col-6 col-sm-4 col-lg-2">
-                    <a href="category.html" class="cat-block">
+                    <a href="{{ route('frontend.category.index') }}" class="cat-block">
                         <figure>
                             <span>
                                 <img src="{{ asset('frontend/img/lucio.jpeg') }}" alt="Category image">
@@ -124,7 +124,7 @@
                 </div><!-- End .col-sm-4 col-lg-2 -->
 
                 <div class="col-6 col-sm-4 col-lg-2">
-                    <a href="category.html" class="cat-block">
+                    <a href="{{ route('frontend.category.index') }}" class="cat-block">
                         <figure>
                             <span>
                                 <img src="{{ asset('frontend/img/product-1.jpg') }}" alt="Category image">
@@ -137,7 +137,7 @@
                 </div><!-- End .col-sm-4 col-lg-2 -->
 
                 <div class="col-6 col-sm-4 col-lg-2">
-                    <a href="category.html" class="cat-block">
+                    <a href="{{ route('frontend.category.index') }}" class="cat-block">
                         <figure>
                             <span>
                                 <img src="{{ asset('frontend/img/image-467.jpg') }}" alt="Category image">
@@ -150,7 +150,7 @@
                 </div><!-- End .col-sm-4 col-lg-2 -->
 
                 <div class="col-6 col-sm-4 col-lg-2">
-                    <a href="category.html" class="cat-block">
+                    <a href="{{ route('frontend.category.index') }}" class="cat-block">
                         <figure>
                             <span>
                                 <img src="{{ asset('frontend/img/image-434.jpg') }}" alt="Category image">

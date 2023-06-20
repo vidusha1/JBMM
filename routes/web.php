@@ -17,7 +17,9 @@ use App\Http\Controllers\Admin\WarehouseController;
 use App\Http\Controllers\Admin\AdminDashboardController;
 use App\Http\Controllers\Frontend\CartController;
 use App\Http\Controllers\Frontend\CheckoutController;
+use App\Http\Controllers\Frontend\FrontendCategoryController;
 use App\Http\Controllers\Frontend\FrontendHomeController;
+use App\Http\Controllers\Frontend\FrontendSingleProduct;
 use App\Http\Controllers\Frontend\WishlistController;
 
 /*
@@ -52,6 +54,16 @@ Route::controller(CartController::class)->group(function () {
 // Frontend Checkout
 Route::controller(CheckoutController::class)->group(function () {
     Route::get('/checkout', 'index')->name('frontend.checkout.index');
+});
+
+// Category
+Route::controller(FrontendCategoryController::class)->group(function () {
+    Route::get('/category', 'index')->name('frontend.category.index');
+});
+
+// Single Product
+Route::controller(FrontendSingleProduct::class)->group(function () {
+    Route::get('/single-product', 'index')->name('frontend.single-product.index');
 });
 
 // Admin Routing
