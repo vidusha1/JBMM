@@ -39,63 +39,80 @@
 
         <span class="slider-loader"></span><!-- End .slider-loader -->
     </div><!-- End .intro-slider-container -->
-    <div class="icon-boxes-container" style="background: lightblue">
+
+    <div class="icon-boxes-container" style="background: #8FBB90">
         <div class="container">
-            <div class="row">
-                <div class="col-sm-6 col-lg-3">
-                    <div class="icon-box icon-box-side">
-                        <span class="icon-box-icon">
-                            <i class="icon-rocket"></i>
-                        </span>
-    
-                        <div class="icon-box-content">
-                            <h3 class="icon-box-title">Free Shipping</h3><!-- End .icon-box-title -->
-                            <p>Orders $50 or more</p>
-                        </div><!-- End .icon-box-content -->
-                    </div><!-- End .icon-box -->
-                </div><!-- End .col-sm-6 col-lg-3 -->
-    
-                <div class="col-sm-6 col-lg-3">
-                    <div class="icon-box icon-box-side">
-                        <span class="icon-box-icon">
-                            <i class="icon-rotate-left"></i>
-                        </span>
-    
-                        <div class="icon-box-content">
-                            <h3 class="icon-box-title">Free Returns</h3><!-- End .icon-box-title -->
-                            <p>Within 30 days</p>
-                        </div><!-- End .icon-box-content -->
-                    </div><!-- End .icon-box -->
-                </div><!-- End .col-sm-6 col-lg-3 -->
-    
-                <div class="col-sm-6 col-lg-3">
-                    <div class="icon-box icon-box-side">
-                        <span class="icon-box-icon">
-                            <i class="icon-info-circle"></i>
-                        </span>
-    
-                        <div class="icon-box-content">
-                            <h3 class="icon-box-title">Get 20% Off 1 Item</h3><!-- End .icon-box-title -->
-                            <p>When you sign up</p>
-                        </div><!-- End .icon-box-content -->
-                    </div><!-- End .icon-box -->
-                </div><!-- End .col-sm-6 col-lg-3 -->
-    
-                <div class="col-sm-6 col-lg-3">
-                    <div class="icon-box icon-box-side">
-                        <span class="icon-box-icon">
-                            <i class="icon-life-ring"></i>
-                        </span>
-    
-                        <div class="icon-box-content">
-                            <h3 class="icon-box-title">We Support</h3><!-- End .icon-box-title -->
-                            <p>24/7 amazing services</p>
-                        </div><!-- End .icon-box-content -->
-                    </div><!-- End .icon-box -->
-                </div><!-- End .col-sm-6 col-lg-3 -->
+            <div class="row"> 
+
+                <div class="col-md-12">
+                    <div class="text-center">
+                        <h3>Leading Supplier of</h3>
+                        <p style="font-weight: bold; color: black" class="text-black">Moroccan Oriental Pottery, Cutlery and Catering Items, Mediterranean Accessories and Hotel Supplies items.</p>
+                        <button class="btn btn-sm my-5 btn-info">Enquire Now</button>
+                    </div>
+                </div>
+                 
             </div><!-- End .row -->
         </div><!-- End .container -->
     </div><!-- End .icon-boxes-container -->
+
+    <div class="icon-boxes-container" style="background: rgb(118, 211, 183) ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="icon-box icon-box-side">
+                            <span class="icon-box-icon">
+                                <i class="icon-rocket"></i>
+                            </span>
+        
+                            <div class="icon-box-content">
+                                <h3 class="icon-box-title">Free Shipping</h3><!-- End .icon-box-title -->
+                                <p>Orders $50 or more</p>
+                            </div><!-- End .icon-box-content -->
+                        </div><!-- End .icon-box -->
+                    </div><!-- End .col-sm-6 col-lg-3 -->
+        
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="icon-box icon-box-side">
+                            <span class="icon-box-icon">
+                                <i class="icon-rotate-left"></i>
+                            </span>
+        
+                            <div class="icon-box-content">
+                                <h3 class="icon-box-title">Free Returns</h3><!-- End .icon-box-title -->
+                                <p>Within 30 days</p>
+                            </div><!-- End .icon-box-content -->
+                        </div><!-- End .icon-box -->
+                    </div><!-- End .col-sm-6 col-lg-3 -->
+        
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="icon-box icon-box-side">
+                            <span class="icon-box-icon">
+                                <i class="icon-info-circle"></i>
+                            </span>
+        
+                            <div class="icon-box-content">
+                                <h3 class="icon-box-title">Get 20% Off 1 Item</h3><!-- End .icon-box-title -->
+                                <p>When you sign up</p>
+                            </div><!-- End .icon-box-content -->
+                        </div><!-- End .icon-box -->
+                    </div><!-- End .col-sm-6 col-lg-3 -->
+        
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="icon-box icon-box-side">
+                            <span class="icon-box-icon">
+                                <i class="icon-life-ring"></i>
+                            </span>
+        
+                            <div class="icon-box-content">
+                                <h3 class="icon-box-title">We Support</h3><!-- End .icon-box-title -->
+                                <p>24/7 amazing services</p>
+                            </div><!-- End .icon-box-content -->
+                        </div><!-- End .icon-box -->
+                    </div><!-- End .col-sm-6 col-lg-3 -->
+                </div><!-- End .row -->
+            </div><!-- End .container -->
+        </div><!-- End .icon-boxes-container -->
 
     <div class="mb-4"></div><!-- End .mb-2 -->
 
